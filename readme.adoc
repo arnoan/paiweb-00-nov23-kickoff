@@ -1,0 +1,22 @@
+= Demo of Simple LLM Application using LangChain + Streamlit
+
+This repository contains a simple demo application (a friendly AI-assistent for the https://pandas.pydata.org[Pandas] data manipulation library) that shows how a LLM based system can be built in under 100 lines of code.
+
+This application is built using https://www.langchain.com[LangChain] (for the LLM-related logic) and https://www.streamlit.io/[Streamlit] (for the UI) and uses GPT-4 from https://openai.com[OpenAI] as the LLM model. That said, since LangChain is used as an abstraction layer, it should be trivial to adjust the code to use Cohere, Claude, Llama2, or any other of the many LLMs that are https://python.langchain.com/docs/integrations/llms/[supported by LangChain].
+
+== Local Setup
+
+To run the application locally, follow these steps:
+
+1. Clone this repository.
+2. Ensure you have a suitable Python version (3.10 or higher) installed and accessible on your path (you can verify this via `python -V`).
+3. Install the dependencies via `pip install -r requirements.txt`.
+4. Ensure you have access to an OpenAI API key.
+5. Copy the `.streamlit/secrets.toml.template` file to `.streamlit/secrets.toml` and fill in your OpenAI API key.
+6. Run the application via `streamlit run 00_pumba_pandas_tutor.py`.
+7. Open the application in your browser at http://localhost:8501.
+8. Have fun! (PS: You can stop the server via `Ctrl+C` in your terminal.)
+
+== Support
+
+If you should run into any issues, you can ask for help in the `#Help` channel in the https://chat.paiweb.dev[PAIWeb Community Chat]. If you aren't part of the Arnhem PAIWeb Meetup Community and still somehow find your way to this repo and need support, you can reach out via `arno at paiweb.dev`.
