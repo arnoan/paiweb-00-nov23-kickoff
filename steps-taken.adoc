@@ -1,0 +1,22 @@
+= Steps-Taken
+
+Logbook of relevant steps taken.
+
+[NOTE]
+For local setup, refer to `readme.adoc`. This file is intended to understand how the project itself was set up/bootstrapped. Once all the structures described here are in place the instructions in `readme.adoc` provide a more direct path to get things up and running.
+
+- ensure suitable Python version is available and on path
+`python -V`
+- create new virtual environment
+`python -m venv venv --copies`
+- activate env
+`source venv/bin/activate`
+- create `requirements-dev.txt` with `pip-tools` (for `pip-compile` to handle transitive dependencies)
+- install dev requirements
+`pip install -r requirements-dev` 
+- create `requirements.in` with `langchain` and `streamlit`
+- lock dependencies/create `requirements.txt` based on `requirements.in`
+`pip-compile requirements.txt`
+- install requirements
+`pip install -r requirements.txt`
+
