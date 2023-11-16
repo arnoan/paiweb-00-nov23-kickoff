@@ -2,7 +2,9 @@
 
 This repository contains a simple demo application (a friendly AI-assistent for the https://pandas.pydata.org[Pandas] data manipulation library) that shows how a LLM based system can be built in under 100 lines of code.
 
-This application is built using https://www.langchain.com[LangChain] (for the LLM-related logic) and https://www.streamlit.io/[Streamlit] (for the UI) and uses GPT-4 from https://openai.com[OpenAI] as the LLM model. That said, since LangChain is used as an abstraction layer, it should be trivial to adjust the code to use Cohere, Claude, Llama2, or any other of the many LLMs that are https://python.langchain.com/docs/integrations/llms/[supported by LangChain].
+The application is built using https://www.langchain.com[LangChain] (for the LLM-related logic) and https://www.streamlit.io/[Streamlit] (for the UI) and uses GPT-4 from https://openai.com[OpenAI] as the LLM model. That said, since LangChain is used as an abstraction layer, it should be trivial to adjust the code to use Cohere, Claude, Llama2, or any other of the many LLMs that are https://python.langchain.com/docs/integrations/llms/[supported by LangChain].
+
+The code was demonstrated during the https://www.meetup.com/arnhem-paiwed-the-friendly-python-ai-webdev-meetup/events/296398666/[Nov '23 PAIWeb #0: Kick-Off Event] of the https://www.meetup.com/arnhem-paiwed-the-friendly-python-ai-webdev-meetup/[Arnhem PAIWeb Meetup].
 
 == Local Setup
 
